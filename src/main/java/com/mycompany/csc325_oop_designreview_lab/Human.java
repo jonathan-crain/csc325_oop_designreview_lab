@@ -27,9 +27,13 @@ public abstract class Human {
 		this.name = name;
 	}
 
-	public abstract String getAddress() ;
+	public String getAddress(){
+            return address;
+        }
 
-	public abstract void setAddress(String address);
+	public void setAddress(String address){
+            this.address = address;
+        }
 
 
 	public short getAge() {
