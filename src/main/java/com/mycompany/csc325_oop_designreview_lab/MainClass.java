@@ -25,30 +25,24 @@ public class MainClass {
             //Added cast to short. Also changed to std3, since had to change Freshman to std2.
             Senior std3 = new Senior("John", (short) 30, 90);
 
-            // ToDo 8: Set the gpa of the student using the scanner and user
-            // ToDo 11: Set the gpa of the student using the scanner and user
-            // 			input and then print the output.
-            
+            //Use a Scanner to get user input. Set GPA accordingly. In principle, should probably check that the GPA makes sense (e.g., is not negative), but...
             Scanner in = new Scanner(System.in);
             System.out.println("Enter GPA for James-the-generic-student:");
             std1.setGpa(in.nextDouble());
-            
+
             System.out.println("Enter GPA for James-the-Freshman:");
             std2.setGpa(in.nextDouble());
-            
+
             System.out.println("Enter GPA for John-the-Senior:");
             std3.setGpa(in.nextDouble());
             
+            //Print the details of each student, including the entered GPAs.
             System.out.println(std1);
 
             System.out.println(std2);
 
             System.out.println(std3);
 
-            // ToDo 9: add comments and explain your code
-            // ToDo 12: add comments and explain your code
-            // ToDo 10: submit using a pull request.
-            // ToDo 13: submit using a pull request.
         } catch (InsufficientCreditsException e) {
             System.out.println(e);
         }

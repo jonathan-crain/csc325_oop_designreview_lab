@@ -22,6 +22,6 @@ public class Freshman extends Student {
 
     @Override
     public String toString() {
-        return "Freshman{" + "credits=" + credits + '}';
+        return "Freshman{" + "name=" + super.getName() + " age=" + super.getAge() + " gpa=" + gpa + " credits=" + credits + '}';
     }
 }

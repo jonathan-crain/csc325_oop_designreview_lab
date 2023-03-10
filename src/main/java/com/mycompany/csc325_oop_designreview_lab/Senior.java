@@ -27,6 +27,6 @@ public class Senior extends Student {
 
     @Override
     public String toString() {
-        return "Senior{" + "credits=" + credits + '}';
+        return "Senior{" + "name=" + super.getName() + " age=" + super.getAge() + " gpa=" + gpa + " credits=" + credits + '}';
     }
 }

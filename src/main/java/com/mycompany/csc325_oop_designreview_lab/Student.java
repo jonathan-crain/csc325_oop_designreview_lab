@@ -38,7 +38,7 @@ public class Student extends Human {
 
     @Override
     public String toString() {
-        return "Student{" + "gpa=" + gpa + '}';
+        return "Student{" + "name=" + super.getName() + " age=" + super.getAge() + " gpa=" + gpa + '}';
     }
 
 }
