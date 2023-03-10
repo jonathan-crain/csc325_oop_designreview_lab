@@ -3,6 +3,8 @@
  */
 package com.mycompany.csc325_oop_designreview_lab;
 
+import java.util.Scanner;
+
 /**
  *
  * @author MoaathAlrajab
@@ -26,6 +28,17 @@ public class MainClass {
             // ToDo 8: Set the gpa of the student using the scanner and user
             // ToDo 11: Set the gpa of the student using the scanner and user
             // 			input and then print the output.
+            
+            Scanner in = new Scanner(System.in);
+            System.out.println("Enter GPA for James-the-generic-student:");
+            std1.setGpa(in.nextDouble());
+            
+            System.out.println("Enter GPA for James-the-Freshman:");
+            std2.setGpa(in.nextDouble());
+            
+            System.out.println("Enter GPA for John-the-Senior:");
+            std3.setGpa(in.nextDouble());
+            
             System.out.println(std1);
 
             System.out.println(std2);
