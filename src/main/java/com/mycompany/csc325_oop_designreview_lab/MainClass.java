@@ -1,7 +1,6 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
-
 package com.mycompany.csc325_oop_designreview_lab;
 
 /**
@@ -10,39 +9,36 @@ package com.mycompany.csc325_oop_designreview_lab;
  */
 public class MainClass {
 
- public static void main(String[] args) {
-		// ToDo 5: Fix the error
+    public static void main(String[] args) {
+        //Wrapped in try/catch block since Senior can throw InsufficienctCreditsException.
+        try {
+            //Added cast to short, since Human.age is a short. Alternative would be to change Human.age to int.
+            Student std1 = new Student("James", (short) 20);
 
-		// ToDo 6: Fix the constructor of Student class
+            //Cast to short. Changed to create new Freshman from new Student, since constructor call is taking in credits as an argument.
+            //That is, now takes advantage of Inheritance using the newly created Freshman class.
+            //Also changed to std2, since had same identifier as std1.
+            Freshman std2 = new Freshman("James", (short) 20, 12); // name, age, credits
 
-                // Todo 7: Create two classes for Freshman and Senior 
+            //Added cast to short. Also changed to std3, since had to change Freshman to std2.
+            Senior std3 = new Senior("John", (short) 30, 90);
 
-                // ToDo 8: The senior class should have a minimum of 85 credits  
+            // ToDo 8: Set the gpa of the student using the scanner and user
+            // ToDo 11: Set the gpa of the student using the scanner and user
+            // 			input and then print the output.
+            System.out.println(std1);
 
-		// ToDo 7: Add a toString method for Student class
-		// ToDo 9: Add a toString method for Freshman class
+            System.out.println(std2);
 
-		Student std1= new Student("James", 20);
-                // ToDo 10: Add a toString method for Senior class
+            System.out.println(std3);
 
-		Freshman std1= new Student("James", 20, 12); // name, age, credits
+            // ToDo 9: add comments and explain your code
+            // ToDo 12: add comments and explain your code
+            // ToDo 10: submit using a pull request.
+            // ToDo 13: submit using a pull request.
+        } catch (InsufficientCreditsException e) {
+            System.out.println(e);
+        }
 
-                Senior std2 = new Student("John", 30, 90);
-
-		// ToDo 8: Set the gpa of the student using the scanner and user
-		// ToDo 11: Set the gpa of the student using the scanner and user
-		// 			input and then print the output.
-
-		System.out.println(std1);
-
-                System.out.println(std2);
-
-		// ToDo 9: add comments and explain your code
-		// ToDo 12: add comments and explain your code
-
-		// ToDo 10: submit using a pull request.
-		// ToDo 13: submit using a pull request.
-	}
-
+    }
 }
-
