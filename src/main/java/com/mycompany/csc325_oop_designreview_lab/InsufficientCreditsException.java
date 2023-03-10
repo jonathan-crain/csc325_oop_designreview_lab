@@ -9,7 +9,7 @@ package com.mycompany.csc325_oop_designreview_lab;
  * @author niarc
  */
 public class InsufficientCreditsException extends Exception{
-    public InsufficientCreditsException(String errorMessage, Throwable err){
-        super(errorMessage, err);
+    public InsufficientCreditsException(String errorMessage){
+        super(errorMessage);
     }
 }
