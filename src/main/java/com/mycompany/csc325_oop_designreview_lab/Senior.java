@@ -8,6 +8,14 @@ public class Senior extends Student {
 
     int credits;
 
+    /**
+     * Constructor.
+     *
+     * @param name
+     * @param age
+     * @param credits
+     * @throws InsufficientCreditsException
+     */
     public Senior(String name, short age, int credits) throws InsufficientCreditsException {
         super(name, age);
         if (credits < 85) {

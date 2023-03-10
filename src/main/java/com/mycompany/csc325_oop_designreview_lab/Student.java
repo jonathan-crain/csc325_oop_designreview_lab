@@ -20,6 +20,7 @@ public class Student extends Human {
 
     /**
      * Gets the student's GPA.
+     *
      * @return
      */
     public double getGpa() {
