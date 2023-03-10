@@ -35,4 +35,9 @@ public class Student extends Human {
         this.gpa = gpa;
     }
 
+    @Override
+    public String toString() {
+        return "Student{" + "gpa=" + gpa + '}';
+    }
+
 }
